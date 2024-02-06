@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1 id="aa">hellooooo</h1>
+    <button onclick="myfun()">click</button>
+    <script>
+        function myfun()
+        {
+            document.getElementById("aa").style.color="red";
+        } -->
+
+
+        <!-- <h1 id="aa">hellooooo</h1>
+    <input type="text" id="aaa" onchange="myfun()">
+    <script>
+        function myfun()
+        {
+            document.getElementById("aa").style.color="red";
+        } -->
+<!-- 
+        <h1 id="aa">hellooooo</h1>
+        <input type="text" id="aaa">
+        <script>
+                document.getElementById("aaa").onkeyup=function()
+            {
+                document.getElementById("aa").style.fontSize="45px";
+                document.getElementById("aa").style.color="red";
+            } -->
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt inventore expedita magni molestias voluptates porro?</p>
+            <h1 id="aa" onmouseover="mm">welcome</h1>
+            <script>
+                function mm()
+                 {
+                    document.getElementById("aa").style.color="yellow";
+                    return false;
+                }
+            </script> -->
+            <h1>welcome</h1>
+            <p id="aa" onmouseover="mm()">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt inventore expedita magni molestias voluptates porro?</p>
+            <script>
+                function mm(){
+
+                var a=document.getElementById("aa");
+
+                a.addEventListener('mouseover',function MouseOver()
+                {
+                    a.style.color="red";
+                });
+                a.addEventListener('mouseout',function MouseOut()
+                {
+                    a.style.color="black";
+                });
+                    
+                }
+            </script>
+    </script>
+</body>
+</html>

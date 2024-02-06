@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="imgs" src="https://i.pinimg.com/236x/79/b7/aa/79b7aa9766cb60d55c953355e404a5d2.jpg" alt="">
+    <button onclick="chi()">ON</button>
+    <button onclick="ch()">OFF</button>
+    <script>
+        function chi()
+        {
+            let image =document.getElementById("imgs");
+            image.style.width="100px";
+            image.style.height="100px";
+            if (image.src.match("aa"))
+            {
+                image.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8rmsVRL-7Q5wqe9oneZy7lRvBDtxu3YJNPw&usqp=CAU";
+            }
+        }
+        function ch()
+        {
+            let image =document.getElementById("imgs");
+            image.style.width="100px";
+            image.style.height="100px";
+            if (image.src.match("CAU"))
+            {
+                image.src="https://i.pinimg.com/236x/79/b7/aa/79b7aa9766cb60d55c953355e404a5d2.jpg";
+            }   
+        }
+    </script>
+</body>
+</html>
