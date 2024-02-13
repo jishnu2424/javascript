@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inverted Pyramid Pattern</title>
+</head>
+<body>
+
+<script>
+    function Invertedpyramid(rows) {
+        for (let i=rows;i>=1;i--) {
+            let row='';
+            for (let j=rows;j>i;j--) {
+                row +=' ';
+            }
+            for (let k=1;k<=2*i-1; k++) {
+                row +='*';
+            }
+            console.log(row);
+        }
+    }
+Invertedpyramid(5);
+</script>
+
+</body>
+</html>

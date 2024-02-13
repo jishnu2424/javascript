@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="em">
+    <button onclick="valid()">enter</button>
+    <script>
+        function valid(){
+            const email =document.getElementById("em").value;
+            const regex =/^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/;
+
+            if(regex.test(email))
+            {
+                console.log(`${email} is valid`);
+            }
+            else{
+                console.log(`${email} is not valid`);
+            }
+        }
+    </script>
+</body>
+</html>
